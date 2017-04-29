@@ -1,9 +1,9 @@
 <?php
  
 /* == ID tài khoản muốn tăng share == */
-$user = 'VuTienAnh.Pro';
+$user = 'TimDz.Bro';
 /* == Token tài khoản chứa page == */
-$token = 'ViNa4U.Pro';
+$token = 'EAAAAAYsX7TsBAAaPlB4Pbg5qCr3vGZCyVL5alZBZAEd6fumCLzrKm1fkj4GxntvINBRNYF903viV48RuQpH825ffb0IZCuEXXIN14jKPOu3O2HCfP6qGy7ahcQ06e7GYZA3FmJzLcX1EMQO7eERFltL8DIGDmoKtZAX5CoQWtZAkN8DmOzPLv8ZAuZCZAUNho5pKK6uMhH12XoLgZDZD';
 $accounts = json_decode(cURL('https://graph.facebook.com/me/accounts?access_token=' . $token),true);
  
 $feed = json_decode(cURL('https://graph.facebook.com/' . $user . '/feed?access_token='.$token.'&limit=1'),true);
